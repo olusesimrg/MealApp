@@ -13,7 +13,7 @@ body{
      height:100vh;
      flex-direction: column;
      font-family: 'Raleway', sans-serif;
-     overflow: hidden;
+     
 }
 .image img{
      max-width: 100%;
@@ -75,6 +75,9 @@ li a:hover {
 } */
 
 @media only screen and (min-width: 600px){
+     body{
+          overflow: hidden;
+     }
      .container{
           display: flex;
           flex-direction: row-reverse;

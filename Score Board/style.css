@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,700&family=Roboto:ital,wght@0,100;0,400;1,300;1,400&display=swap');
 
 *{
 	margin: 0;
@@ -8,7 +8,7 @@
 	body{ 
 		background-color: white;
 		background-image: url("https://img.freepik.com/free-vector/realistic-soccer-football-stadium-illustration_52683-60377.jpg?w=996&t=st=1681129177~exp=1681129777~hmac=02959a067c4e533af04b0db743892a5691c9b4c5b19e94fce8f2bac3177aa390");
-		font-family: "Roboto", sans-serif;
+		font-family: "Raleway", sans-serif;
 		background-size: cover;
 		display: flex;
 		align-items: center;
@@ -24,6 +24,7 @@
 	/* margin:  auto; */
 	border: 1px solid rgb(0,0,52);
 	border-radius: 8px;
+	padding: 10px;
 
 }
 
