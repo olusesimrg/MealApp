@@ -5,15 +5,22 @@ const ampmEl = document.getElementById("ampm");
 
 
 function updateTime(){
+
 let hour = new Date().getHours();
 let minutes = new Date().getMinutes();
 let seconds = new Date().getSeconds();
-let ampm = "Am"
+let ampm = "AM"
 
-if (hour > 12){
+if (hour > 11 && hour < 24){
   hour = hour - 12;
   ampm = "PM"
+} 
+
+if (hour == 24){
+  hour = hour - 24;
+  ampm = "AM"
 };
+
 
 //using textcontent to set the time in our UI
 hourEl.textContent = hour;
