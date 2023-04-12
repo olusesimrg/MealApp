@@ -1,7 +1,7 @@
 
 
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
+const saveEl = document.getElementById("save-el")
+const countEl = document.getElementById("count-el")
 let count = 0
 
 //funtion that does the counting
@@ -16,6 +16,6 @@ function save() {
     countEl.textContent = 0
     count = 0
 }
-
+//all the events listener is called in the HTML using onclick attribute
 
         

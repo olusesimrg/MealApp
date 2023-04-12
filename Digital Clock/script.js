@@ -3,8 +3,8 @@ const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 const ampmEl = document.getElementById("ampm");
 
-function updateTime(){
 
+function updateTime(){
 let hour = new Date().getHours();
 let minutes = new Date().getMinutes();
 let seconds = new Date().getSeconds();
@@ -15,6 +15,7 @@ if (hour > 12){
   ampm = "PM"
 };
 
+//using textcontent to set the time in our UI
 hourEl.textContent = hour;
 minutesEl.textContent = minutes;
 secondsEl.textContent = seconds;
@@ -50,4 +51,5 @@ setTimeout(() =>{
 }, 1000)
 
 };
+
 updateTime();
