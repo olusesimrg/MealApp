@@ -3,6 +3,7 @@ const plus = document.querySelector(".icon");
 let inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el")
 const liEm = document.getElementById("li-em")
+const formEl = document.getElementById("form")
 
 let list = JSON.parse(localStorage.getItem("list"));
 
@@ -13,20 +14,23 @@ list.forEach(task => {
 });
 console.log(list)
 
-inputEl.addEventListener("keypress", function(e){
-	updateTodo(e);
+formEl.addEventListener("submit", (e) => {
+     e.preventDefault();
+	updateTodo();
 })
 
-function updateTodo(e, task){
+function updateTodo(task){
 	
-	if(e.keyCode === 13){
-		e.preventDefault();	
+	//if(e.keyCode === 13){
 		let todoText = inputEl.value
 		if(task){
 			todoText = task.name;
 		}
 			inputEl.value = "";
 		const liEl = document.createElement("li");
+          if(task && task.checked){
+			liEl.classList.add("connect")
+		}
 			liEl.innerText = todoText
 			ulEl.appendChild(liEl)
 			liEl.innerText = todoText
@@ -38,6 +42,9 @@ function updateTodo(e, task){
 
 		liEl.addEventListener("click", ()=> {
 			liEl.classList.toggle("connect");
+               if (task){
+                    
+               }
 			updateLocalStorage()
 		});	
 
@@ -48,7 +55,7 @@ function updateTodo(e, task){
 
 		updateLocalStorage()
 	}	// console.log(todoText)	
-}
+//}
 	
 function updateLocalStorage(){
 	const liElements = document.querySelectorAll("li");
@@ -67,23 +74,5 @@ function updateLocalStorage(){
 
 //hiding and showing the text input
 plus.addEventListener("click", function(){
-	inputEl.classList.toggle("input");
-	fadeOut()
+	inputEl.classList.toggle("input");s
 })
-
-
-console.log(inputEl)
-
- function fadeOut(){
-	
-	let fadeEffect = setInterval(function () {
-		if (!inputEl.style.opacity) {
-		    inputEl.style.opacity = 1;
-		}
-		if (inputEl.style.opacity > 0) {
-		    inputEl.style.opacity -= 0;
-		} else {
-		    clearInterval(fadeEffect);
-		}
-	 }, 200);
-	}

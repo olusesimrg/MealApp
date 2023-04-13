@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,700&family=Roboto:ital,wght@0,100;0,400;1,300;1,400&display=swap');
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
 body{
-		margin: 0;
 	  background-image: linear-gradient(135deg, #f97794 10%, #623AA2 100%);
-	  font-family: Roboto;
+	  height: 100vh;
+	  font-family: "Raleway", sans-serif;
+	  font-weight: 500;
 }
 
 .connect{
@@ -13,6 +20,7 @@ body{
 	margin: 100px auto;
 /*	border: 1px solid #ddd;*/
 	background-color: #eee;
+	border-radius: 15px;
 }
 h1{
 	background-color: #9a519d;
@@ -20,9 +28,10 @@ h1{
 	padding: 10px 20px;
 	text-transform: uppercase;
 	color: white;
-	font-weight: normal;
-	font-size: 24px;
+	font-weight: 700;
+	font-size: 22px;
 }
+
 input{
 	width: 100%;
 	padding: 13px 13px 13px 20px;
@@ -37,13 +46,13 @@ input{
 	display: none;
 	opacity: 0;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
-   }
+   } */
 input:focus{
-background-color: white;
-border:3px solid lightblue;
+	background-color: white;
+	border:3px solid lightblue;
 	outline: none;
 }
 ul{
@@ -54,8 +63,15 @@ ul{
 li{
 	height: 45px;
 	line-height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	font-size: 16px;
 	background-color: white;
+	font-weight: 700;
 	color: #666;
+	color: #9a519d;
 	overflow:auto;
 }
 li:nth-child(2n){
@@ -66,11 +82,11 @@ span{
 	background-color: #f17495;
 	color: white;
 	width: 0;
-	margin-right: 20px; 
 	text-align: center;
 	display: inline-block;
 	transition: 0.2s;
 	opacity: 0;
+	overflow: auto;
 }
 li:hover span{
 	width: 40px;
@@ -80,5 +96,8 @@ li:hover span{
 .plus{
 	float: right;
 	font-weight: bold;
+	cursor: pointer;
+}
+.point{
 	cursor: pointer;
 }
