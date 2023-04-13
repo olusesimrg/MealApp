@@ -16,7 +16,7 @@ console.log(list)
 
 formEl.addEventListener("submit", (e) => {
      e.preventDefault();
-	updateTodo();
+	updateTodo(e);
 })
 
 function updateTodo(task){
