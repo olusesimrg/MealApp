@@ -65,7 +65,9 @@ function updateLocalStorage(){
 			checked: liElement.classList.contains("connect")
 		})	
 	})
-
+	
+	
+	
      //set localstorage items and convert it to string
 	localStorage.setItem("list", JSON.stringify(list))
 }
