@@ -73,6 +73,6 @@ function updateLocalStorage(){
 }
 
 //hiding and showing the text input
-plus.addEventListener("click", function(){
-	inputEl.classList.toggle("input");
-})
+// plus.addEventListener("click", function(){
+// 	inputEl.classList.toggle("input");
+// })
