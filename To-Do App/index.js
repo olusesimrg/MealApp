@@ -42,9 +42,6 @@ function updateTodo(task){
 
 		liEl.addEventListener("click", ()=> {
 			liEl.classList.toggle("connect");
-               if (task){
-                    
-               }
 			updateLocalStorage()
 		});	
 
@@ -68,11 +65,12 @@ function updateLocalStorage(){
 			checked: liElement.classList.contains("connect")
 		})	
 	})
+
+     //set localstorage items and convert it to string
 	localStorage.setItem("list", JSON.stringify(list))
 }
 
-
 //hiding and showing the text input
 plus.addEventListener("click", function(){
-	inputEl.classList.toggle("input");s
+	inputEl.classList.toggle("input");
 })

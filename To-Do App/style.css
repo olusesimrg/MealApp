@@ -72,6 +72,7 @@ li{
 	font-weight: 700;
 	color: #666;
 	color: #9a519d;
+	cursor: pointer;
 	overflow:auto;
 }
 li:nth-child(2n){
