@@ -1,59 +1,54 @@
 
 const plus = document.querySelector(".icon");
 let inputEl = document.getElementById("input-el");
-const ulEl = document.getElementById("ul-el")
-const liEm = document.getElementById("li-em")
-const formEl = document.getElementById("form")
+const ulEl = document.getElementById("ul-el");
+const liEm = document.getElementById("li-em");
+const formEl = document.getElementById("form");
 
 let list = JSON.parse(localStorage.getItem("list"));
 
-console.log(list)
-
 list.forEach(task => {
-	updateTodo(task)
+	updateTodo(task);
 });
 console.log(list)
 
 formEl.addEventListener("submit", (e) => {
-     e.preventDefault();
 	updateTodo();
+	e.preventDefault();
 })
 
 function updateTodo(task){
-	
 	//if(e.keyCode === 13){
-		let todoText = inputEl.value
+		let todoText = inputEl.value;
 		if(task){
 			todoText = task.name;
-		}
+		};
 			inputEl.value = "";
 		const liEl = document.createElement("li");
           if(task && task.checked){
-			liEl.classList.add("connect")
+			liEl.classList.add("connect");
 		}
-			liEl.innerText = todoText
-			ulEl.appendChild(liEl)
-			liEl.innerText = todoText
+			liEl.innerText = todoText;
+			ulEl.appendChild(liEl);
+			liEl.innerText = todoText;
 		const span = document.createElement("span");
 			span.innerHTML = `  
 			<i class="fas fa-trash"></i>
 		`
-		liEl.appendChild(span)
+		liEl.appendChild(span);
 
 		liEl.addEventListener("click", ()=> {
 			liEl.classList.toggle("connect");
-			updateLocalStorage()
+			updateLocalStorage();
 		});	
 
 		span.addEventListener("click", ()=> {
 			liEl.remove();
 			updateLocalStorage();
 		});
-
-		updateLocalStorage()
-	}	// console.log(todoText)	
+		updateLocalStorage();
+	};
 //}
-	
 function updateLocalStorage(){
 	const liElements = document.querySelectorAll("li");
 	list = [];
@@ -63,10 +58,8 @@ function updateLocalStorage(){
 		list.push({
 			name: liElement.innerText,
 			checked: liElement.classList.contains("connect")
-		})	
-	})
-	
-	
+		});
+	});
 	
      //set localstorage items and convert it to string
 	localStorage.setItem("list", JSON.stringify(list))
