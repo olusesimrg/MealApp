@@ -7,20 +7,26 @@ const formEl = document.getElementById("form");
 
 let list = JSON.parse(localStorage.getItem("list"));
 
+console.log(list)
+
 list.forEach(task => {
 	updateTodo(task);
 });
+
 console.log(list)
 
-formEl.addEventListener("submit", (e) => {
-	e.preventDefault();
-	updateTodo();
+inputEl.addEventListener("keypress", (e) => {
+	//updateTodo(task);
+	updateTodo(e);
 	
 })
 
-function updateTodo(task){
-	//if(e.keyCode === 13){
+
+function updateTodo(e, task){
+	if(e.keyCode === 13){
+		e.preventDefault();
 		let todoText = inputEl.value;
+
 		if(task){
 			todoText = task.name;
 		};
@@ -49,7 +55,8 @@ function updateTodo(task){
 		});
 		updateLocalStorage();
 	};
-//}
+}
+
 function updateLocalStorage(){
 	const liElements = document.querySelectorAll("li");
 	list = [];
