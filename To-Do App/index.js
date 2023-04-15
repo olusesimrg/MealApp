@@ -13,8 +13,9 @@ list.forEach(task => {
 console.log(list)
 
 formEl.addEventListener("submit", (e) => {
-	updateTodo();
 	e.preventDefault();
+	updateTodo();
+	
 })
 
 function updateTodo(task){
