@@ -7,9 +7,9 @@ const formEl = document.getElementById("form");
 
 let list = JSON.parse(localStorage.getItem("list"));
 
-list.forEach(task => {
-	updateTodo(task);
-});
+let task = list.forEach(task => {
+			updateTodo(task);
+	});
 console.log(list)
 
 formEl.addEventListener("submit", (e) => {
