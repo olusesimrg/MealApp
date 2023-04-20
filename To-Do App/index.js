@@ -11,6 +11,12 @@ plus.addEventListener("click", function(){
 })
 
 
+formEl.addEventListener("submit", (e) => {
+	e.preventDefault();
+	updateTodo();
+	
+})
+
 let list = JSON.parse(localStorage.getItem("list"));
 
 let task = list.forEach( task => {
@@ -19,11 +25,6 @@ let task = list.forEach( task => {
 	
 console.log(list)
 
-formEl.addEventListener("submit", (e) => {
-	e.preventDefault();
-	updateTodo();
-	
-})
 
 function updateTodo(task){
 	//if(e.keyCode === 13){
