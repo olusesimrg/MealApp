@@ -13,8 +13,9 @@ let task = list.forEach(task => {
 console.log(list)
 
 formEl.addEventListener("submit", (e) => {
-	updateTodo();
 	e.preventDefault();
+	updateTodo();
+	
 })
 
 function updateTodo(task){
@@ -25,6 +26,7 @@ function updateTodo(task){
 		};
 			inputEl.value = "";
 		const liEl = document.createElement("li");
+
           if(task && task.checked){
 			liEl.classList.add("connect");
 		}
@@ -53,7 +55,7 @@ function updateLocalStorage(){
 	const liElements = document.querySelectorAll("li");
 	list = [];
 	//loop through all the li element
-	liElements.forEach(liElement =>{
+	liElements.forEach(liElement => {
 	//create object and push data to the list array
 		list.push({
 			name: liElement.innerText,
@@ -66,6 +68,6 @@ function updateLocalStorage(){
 }
 
 //hiding and showing the text input
-// plus.addEventListener("click", function(){
-// 	inputEl.classList.toggle("input");
-// })
+plus.addEventListener("click", function(){
+	inputEl.classList.toggle("input");
+})
