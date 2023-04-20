@@ -5,11 +5,18 @@ const ulEl = document.getElementById("ul-el");
 const liEm = document.getElementById("li-em");
 const formEl = document.getElementById("form");
 
+//hiding and showing the text input
+plus.addEventListener("click", function(){
+	inputEl.classList.toggle("input");
+})
+
+
 let list = JSON.parse(localStorage.getItem("list"));
 
-let task = list.forEach(task => {
+let task = list.forEach( task => {
 			updateTodo(task);
 	});
+	
 console.log(list)
 
 formEl.addEventListener("submit", (e) => {
@@ -67,7 +74,3 @@ function updateLocalStorage(){
 	localStorage.setItem("list", JSON.stringify(list))
 }
 
-//hiding and showing the text input
-plus.addEventListener("click", function(){
-	inputEl.classList.toggle("input");
-})
