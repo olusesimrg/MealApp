@@ -62,7 +62,7 @@ function updateTodo(task){
 function updateLocalStorage(){
 	const liElements = document.querySelectorAll("li");
 	list = [];
-	//loop through all the li element
+	//loop through all the li elements
 	liElements.forEach(liElement => {
 	//create object and push data to the list array
 		list.push({
