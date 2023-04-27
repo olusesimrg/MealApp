@@ -25,8 +25,8 @@ function consoleStyler(color, background, fontSize, txt) {
  
  // Task 4: Insert a congratulatory and custom message
  function styleAndCelebrate() {
-     consoleStyler(color, background, fontSize, txt);
-     celebrateStyler(reason);
+     //consoleStyler(color, background, fontSize, txt);
+     //celebrateStyler(reason);
  
      consoleStyler(`'#ef7c8e'`, `'#fae8e0'`, `'30px'`, `'You made it!'`);
      celebrateStyler(`'champions'`);
