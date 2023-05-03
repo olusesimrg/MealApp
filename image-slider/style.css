@@ -1,0 +1,25 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body{
+     display: flex;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+     
+}
+
+.slider-container{
+     display: flex;
+}
+
+.image-container{
+     /* overflow: hidden; */
+     display: flex;
+     width: 900px;
+     height: 500px;
+     overflow: hidden;
+}
