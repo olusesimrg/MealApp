@@ -15,16 +15,23 @@ body{
      font-family: 'Raleway', sans-serif;
      
 }
-.image img{
-     max-width: 100%;
-     margin-bottom: 20px;
-}
-
 .container{
      display: flex;
      align-items: center;
      justify-content: center;
      flex-direction: column;
+}
+
+.slider-images{
+     overflow: hidden;
+}
+.image-container{
+     display: flex;  
+ }
+
+.image img{
+     max-width: 100%;
+     margin-bottom: 20px;
 }
 
 .main{
@@ -82,12 +89,16 @@ li a:hover {
           display: flex;
           flex-direction: row-reverse;
      }
+     .slider-images{
+          overflow: hidden;
+          height: 100vh;
+          width: 100%;
+     }
      .main{
           width: 40%;
           padding-left: 70px;
           background-color: #2d3250;
           height: 100vh;
-     
      }
 
      .image{
