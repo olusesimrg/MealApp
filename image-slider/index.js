@@ -37,6 +37,5 @@ function updateImage(){
     timeout = setTimeout(()=>{
           currentImg++
           updateImage()
-     }, 3000)
-
-}
+     }, 3000);
+};
