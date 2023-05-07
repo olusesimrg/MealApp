@@ -24,9 +24,11 @@ body{
 
 .slider-images{
      overflow: hidden;
+     /* transition: transform ease-in-out; */
 }
 .image-container{
-     display: flex;  
+     display: flex;
+     transition: transform ease-in-out;
  }
 
 .image img{
