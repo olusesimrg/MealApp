@@ -2,7 +2,7 @@
 
 *{
      box-sizing: border-box;
-     outline: 1px solid red;
+     /* outline: 1px solid red; */
      margin: 0;
      padding: 0;
     
@@ -15,10 +15,15 @@ body{
      font-size: 0.875rem;
      /* overflow: hidden; */
 }
+header{
+     position: relative;
+}
 
 nav{
      background-color: white;
      box-shadow: 0 5px 15px rgb(0, 0, 0, 0.1);
+     position: fixed;
+     width: 100%;
 }
 
 .nav-header{
@@ -70,6 +75,11 @@ ul{
 
 a{
      text-decoration: none;  
+}
+.slider{
+     /* position: absolute; */
+     height: 100vh;
+     background-color: lightgreen;
 }
 
 /* media queary when screen is larger than 800px */
