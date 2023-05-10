@@ -92,6 +92,7 @@ a{
      .menu{
           height: auto;
           display: flex;
+
      }
       .menu a{
           padding: 0;
