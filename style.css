@@ -95,7 +95,7 @@ li a:hover {
      color: red;
 } */
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 640px){
      body{
           overflow: hidden;
      }
@@ -110,10 +110,11 @@ li a:hover {
      }
      .main{
           width: 40%;
-          padding-left: 70px;
+          padding-left: 50px;
           background-color: #2d3250;
           overflow-y: scroll;
           height: 100vh;
+          padding-bottom: 10px;
      }
      .main::-webkit-scrollbar {
           width: 0.5em;
