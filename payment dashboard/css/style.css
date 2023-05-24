@@ -1,0 +1,288 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+/********** Header section of the css**************/
+.navlist li i{
+    padding-right: 14px
+}
+.header-main{
+    /* background: rgba(255, 157, 30, 0.52); */
+    background: rgba(255, 255, 255, 0.52);
+    box-shadow: none;
+    border-bottom:1px solid #eee ;
+        }
+        .navMenu{
+            display: none;
+        }
+        .header-nav-wrapper {
+    height: 80px;
+    align-items: center;
+}
+.logo{
+    max-width: 120px;
+}
+.navlist{
+    text-align: right;
+    flex: 1;
+    margin:0; 
+}
+.navlist li{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    display: inline-block;
+}
+.navlist li a{
+    color: #968f8f;
+    padding-bottom: 6px;
+    text-decoration: none;
+    transition: .3s border-color ease-out;
+    white-space: nowrap;
+}
+.navlist li a:hover{
+    /* border-bottom: 3px solid #22baae; */
+}
+.navlist li:not(:first-of-type) {
+        margin-left: 2em;
+}
+
+.navMenu-wrapper .fas{
+ font-size: 35px;
+ color: #968f8f;
+}
+/********** section section of the css**************/
+.secwrapper{
+    text-align: center;
+}
+.secwrapper h1{
+        font-size: 2.8em;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: #2e2c2c;
+        letter-spacing: 3px;
+        padding: 1em 1vw;
+        text-align: center;
+}
+form {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 3vw;
+    border: 1px solid #968f8f;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.rdas-field-txt {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    margin-bottom: 1.5em;
+    clear: both;
+}
+.rdas-login label {
+    font-size: 16px;
+    color: #968f8f;
+    float: left;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.rdas-login input[type="text"], 
+.rdas-login input[type="password"]{
+    width: 100%;
+    color: #968f8f;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    /* line-height: 25px; */
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: transparent;
+}
+.rdas_label {
+    float: left;
+    margin: 20px 0 0px 10px;
+}
+
+.rdas-right {
+    float: right;
+    margin: 20px 10px 0 0;
+}
+label.check {
+    float: none;
+    color: #968f8f;
+    font-size: 15px;
+    cursor: pointer;
+}
+.rdas-right a {
+    font-size: 15px;
+    color: #968f8f;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.rdas-login input[type=submit] {
+    width: 50%;
+    margin: auto;
+    padding: 0.7em 0;
+    margin-top: 0em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 600;
+    background: rgba(255, 157, 30, 0.68);
+    color: #fff;
+    border: 1px solid transparent;
+}
+.rdas-login label i {
+    font-size: 1.1em;
+    margin-right: 3px;
+    color: #865516;
+}
+.aside-wrapper{
+
+}
+/********** dashboard section of the css**************/
+.aside-wrapper{
+    margin-top: 50px;
+}
+.aside-wrapper-content{
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+.aside-wrapper-content ul{
+    list-style-type: none;
+    /* background: rgba(255, 157, 30, 0.52); */
+    width: 90%;
+    background: rgba(255, 255, 255, 0.52);
+    border: 1px solid #eee;
+}
+.aside-wrapper-content li{
+    width: 100%;
+    color: #968f8f;
+    border-bottom: 1px solid #eee;
+}
+.aside-wrapper-content li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+    padding: 20px 30px;
+    display: block;
+}
+.aside-wrapper-content i {
+    font-size: 1.1em;
+    margin-right: 20px;
+}
+.aside-wrapper-content li:hover,.aside-wrapper-content i:hover{
+    color:#fff;
+    background: #968f8f;
+}
+
+.all-section-wrapper{
+ 
+}
+.section-content-wrapper{
+    margin: 25px auto;
+    max-width: 450px;
+}
+.content-title{
+        width: 200px;
+        padding: 15px 0;
+        background: rgba(255, 157, 30, 0.52);
+        color: #fff;
+}
+.content-title h5{
+    margin: 0;
+    text-align: center;
+    font-size: 18px; 
+}
+.content-details{
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 3vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #eee;
+}
+
+.rdas-data input[type="text"],
+.rdas-data input[type="number"], select{
+    width: 100%;
+    color: #968f8f;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    /* line-height: 25px; */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.pa30{
+    padding: 0 30px;
+    font-weight: 600;
+}
+.wrapper_acct{
+    margin: 50px 0;
+}
+.btn-wrapper{
+    width: 100%;
+}
+.btn-wrapper .real{
+    width: 47%;
+}
+.acct_sec{
+    background: #eeeeee;
+    padding: 12px;
+    text-align: center;
+}
+.content-details input[type=submit] {
+    width: 50%;
+    padding: 0.7em 0;
+    margin-top: 1em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background: rgba(255, 157, 30, 0.68);
+    color: #fff;
+}
+/********** footer section of the css**************/
+
+.footer-all{
+    background: #504c4c;
+    margin-top: 100px;
+}
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+}
+.footer-content-wrapper{
+    align-items: center;
+    height: 80px;
+}

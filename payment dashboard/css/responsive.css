@@ -1,0 +1,93 @@
+	@media only screen and (max-width:768px){
+        .navlist{
+            display: none;
+        }
+        .navMenu {
+            flex:1;
+            text-align: right;
+            display: block;
+        }
+        .aside-wrapper,.aside{
+            display:none;
+        }
+        .acct_sec {
+          margin-top: 10px;
+        }
+        /* testing nav*/
+        .nav {
+            z-index: 10;
+            background: #968f8f;
+            /* background: rgba(255, 157, 30, 0.68); */
+            width: 300px;
+            position: absolute;
+            /* This trasform moves the drawer off canvas. */
+            -webkit-transform: translate(-430px, 0);
+            transform: translate(-430px, 0);
+            /* Optionally, we animate the drawer. */
+            transition: transform 0.3s ease;
+            top:0;
+            left:0;
+
+          }
+          .nav.open {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+          .nav__item {
+            display: list-item;
+            /* border-bottom: 1px solid #E0E0E0; */
+            width: 100%;
+            text-align: left;
+            padding: .1em 0;
+          }
+          .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 1em;
+            display: inline-block;
+            width: 100%;
+          }
+          .nav i {
+            margin-right: 20px;
+             color: rgba(255, 157, 30, 0.68);
+        }
+          .nav a:hover {
+            text-decoration: none;
+            /* color: #212121; */
+            color: rgba(255, 157, 30, 0.68);
+
+          }
+    }
+    @media only screen and (max-width:600px){
+        .navMenu-wrapper .fas{
+            padding-right: 30px;
+        }
+        .header-logo{
+            padding-left: 30px;
+        }
+        .logo{
+            max-width: 100px;
+        }
+        .navMenu-wrapper .fas{
+            font-size: 25px;
+           }
+           .secwrapper h1 {
+            font-size: 2em;
+        }
+        
+       
+          
+    }
+
+    @media only screen and (max-width:600px){
+        .logo{
+            max-width: 80px;
+        }
+        .navMenu-wrapper .fas{
+            font-size: 20px;
+           }
+           .secwrapper h1 {
+               font-size: 1.8em;
+           }
+
+    }

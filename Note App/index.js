@@ -2,7 +2,7 @@ const btnEl = document.getElementById("btn");
 let a = "gbolahan"
 
 
-function addNote(){
+function addNote(id, content){
      console.log(a)
  }
  
