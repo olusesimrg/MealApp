@@ -49,3 +49,62 @@ class Person {
  
  console.log(intern());
  console.log(manager());
+
+ /// example 5
+ 
+ class Animal {
+
+ }
+ class Dog extends Animal {
+     constructor() {
+         this.noise = "bark";
+     }
+     makeNoise() {
+       return this.noise;
+     }
+ }
+ class Wolf extends Dog {
+     constructor() {
+         super();
+         this.noise = "growl";
+     }
+ }
+
+ var result = new Wolf();
+ console.log(result.makeNoise());
+
+// Array and object iterations (coursera js course)
+// Task 1
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+function logDairy() {
+    for (item of dairy) {
+        console.log(item)
+    }
+}
+logDairy()
+
+// Task 2
+const animal = {
+    canJump: true
+};
+const bird = Object.create(animal)
+bird.canFly = true
+bird.hasFeathers = true
+
+function birdCan() {
+    for (item of Object.keys(bird)) {
+        console.log(item,': ',bird[item])
+    }
+}
+
+birdCan()
+// Task 3
+function animalCan() {
+    for (item in bird) {
+        console.log(item,': ',bird[item])
+    }
+}
+
+animalCan()
+
+ 
